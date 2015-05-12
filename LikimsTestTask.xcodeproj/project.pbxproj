@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11008E6D1B02A0BC00302015 /* LTTNetworkRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E6C1B02A0BC00302015 /* LTTNetworkRequestManager.m */; };
+		11008E751B02A93900302015 /* LikimsTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11008E731B02A93900302015 /* LikimsTestTask.xcdatamodeld */; };
+		11008E781B02A96400302015 /* LTTUsersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E771B02A96400302015 /* LTTUsersData.m */; };
+		11008E7B1B02A96500302015 /* LTTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E7A1B02A96500302015 /* LTTUser.m */; };
+		11008E861B02B4D700302015 /* LTTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E851B02B4D700302015 /* LTTDataProvider.m */; };
+		11008E8A1B02BBED00302015 /* NSError+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E891B02BBED00302015 /* NSError+Errors.m */; };
+		11AAC84A1B028F5A00691A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC8491B028F5A00691A1B /* main.m */; };
+		11AAC84D1B028F5A00691A1B /* LTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC84C1B028F5A00691A1B /* LTTAppDelegate.m */; };
+		11AAC8551B028F5A00691A1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC8541B028F5A00691A1B /* Images.xcassets */; };
+		11AAC8581B028F5A00691A1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC8561B028F5A00691A1B /* LaunchScreen.xib */; };
+		11AAC8741B02919D00691A1B /* LTTUsersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC8721B02919D00691A1B /* LTTUsersListViewController.m */; };
+		11AAC8751B02919D00691A1B /* LTTUsersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */; };
+		C10F7FC429A60A643D27C42A /* libPods-LikimsTestTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE45A362C091DEC28B0507B7 /* libPods-LikimsTestTask.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07A6B0D18E9114BD03082B76 /* Pods-LikimsTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikimsTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikimsTestTask/Pods-LikimsTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		11008E6B1B02A0BC00302015 /* LTTNetworkRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTNetworkRequestManager.h; sourceTree = "<group>"; };
+		11008E6C1B02A0BC00302015 /* LTTNetworkRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTNetworkRequestManager.m; sourceTree = "<group>"; };
+		11008E741B02A93900302015 /* LikimsTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LikimsTestTask.xcdatamodel; sourceTree = "<group>"; };
+		11008E761B02A96400302015 /* LTTUsersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUsersData.h; sourceTree = "<group>"; };
+		11008E771B02A96400302015 /* LTTUsersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUsersData.m; sourceTree = "<group>"; };
+		11008E791B02A96500302015 /* LTTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUser.h; sourceTree = "<group>"; };
+		11008E7A1B02A96500302015 /* LTTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUser.m; sourceTree = "<group>"; };
+		11008E7F1B02B16400302015 /* LTTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTDefinitions.h; sourceTree = "<group>"; };
+		11008E841B02B4D700302015 /* LTTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTDataProvider.h; sourceTree = "<group>"; };
+		11008E851B02B4D700302015 /* LTTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTDataProvider.m; sourceTree = "<group>"; };
+		11008E881B02BBED00302015 /* NSError+Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Errors.h"; sourceTree = "<group>"; };
+		11008E891B02BBED00302015 /* NSError+Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Errors.m"; sourceTree = "<group>"; };
+		11AAC8441B028F5A00691A1B /* LikimsTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikimsTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AAC8481B028F5A00691A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AAC8491B028F5A00691A1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11AAC84B1B028F5A00691A1B /* LTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTTAppDelegate.h; sourceTree = "<group>"; };
+		11AAC84C1B028F5A00691A1B /* LTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTTAppDelegate.m; sourceTree = "<group>"; };
+		11AAC8541B028F5A00691A1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11AAC8571B028F5A00691A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		11AAC8711B02919D00691A1B /* LTTUsersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUsersListViewController.h; sourceTree = "<group>"; };
+		11AAC8721B02919D00691A1B /* LTTUsersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUsersListViewController.m; sourceTree = "<group>"; };
+		11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTTUsersListViewController.xib; sourceTree = "<group>"; };
+		1C23A3E67E038174F5471B9E /* Pods-LikimsTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikimsTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikimsTestTask/Pods-LikimsTestTask.release.xcconfig"; sourceTree = "<group>"; };
+		FE45A362C091DEC28B0507B7 /* libPods-LikimsTestTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikimsTestTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11AAC8411B028F5A00691A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10F7FC429A60A643D27C42A /* libPods-LikimsTestTask.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11008E691B02A06100302015 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11008E831B02B4CC00302015 /* LTTDataProvider */,
+				11008E6A1B02A09E00302015 /* LTTNetworkRequestManager */,
+				11008E6E1B02A26100302015 /* LTTDataBaseManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		11008E6A1B02A09E00302015 /* LTTNetworkRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				11008E6B1B02A0BC00302015 /* LTTNetworkRequestManager.h */,
+				11008E6C1B02A0BC00302015 /* LTTNetworkRequestManager.m */,
+			);
+			path = LTTNetworkRequestManager;
+			sourceTree = "<group>";
+		};
+		11008E6E1B02A26100302015 /* LTTDataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LTTDataBaseManager;
+			sourceTree = "<group>";
+		};
+		11008E721B02A93900302015 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11008E731B02A93900302015 /* LikimsTestTask.xcdatamodeld */,
+				11008E791B02A96500302015 /* LTTUser.h */,
+				11008E7A1B02A96500302015 /* LTTUser.m */,
+				11008E761B02A96400302015 /* LTTUsersData.h */,
+				11008E771B02A96400302015 /* LTTUsersData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11008E831B02B4CC00302015 /* LTTDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				11008E841B02B4D700302015 /* LTTDataProvider.h */,
+				11008E851B02B4D700302015 /* LTTDataProvider.m */,
+			);
+			path = LTTDataProvider;
+			sourceTree = "<group>";
+		};
+		11008E871B02BBDA00302015 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				11008E881B02BBED00302015 /* NSError+Errors.h */,
+				11008E891B02BBED00302015 /* NSError+Errors.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		11AAC83B1B028F5A00691A1B = {
+			isa = PBXGroup;
+			children = (
+				11AAC8461B028F5A00691A1B /* LikimsTestTask */,
+				11AAC8451B028F5A00691A1B /* Products */,
+				4132326570C0AE1C7B1313A6 /* Pods */,
+				C1F372645EB5753CE2F8B413 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11AAC8451B028F5A00691A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11AAC8441B028F5A00691A1B /* LikimsTestTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11AAC8461B028F5A00691A1B /* LikimsTestTask */ = {
+			isa = PBXGroup;
+			children = (
+				11008E7F1B02B16400302015 /* LTTDefinitions.h */,
+				11008E871B02BBDA00302015 /* Categories */,
+				11AAC86F1B02917100691A1B /* UI */,
+				11008E691B02A06100302015 /* Managers */,
+				11008E721B02A93900302015 /* Model */,
+				11AAC84B1B028F5A00691A1B /* LTTAppDelegate.h */,
+				11AAC84C1B028F5A00691A1B /* LTTAppDelegate.m */,
+				11AAC8541B028F5A00691A1B /* Images.xcassets */,
+				11AAC8561B028F5A00691A1B /* LaunchScreen.xib */,
+				11AAC8471B028F5A00691A1B /* Supporting Files */,
+			);
+			path = LikimsTestTask;
+			sourceTree = "<group>";
+		};
+		11AAC8471B028F5A00691A1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11AAC8481B028F5A00691A1B /* Info.plist */,
+				11AAC8491B028F5A00691A1B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11AAC86F1B02917100691A1B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11AAC8701B02918000691A1B /* LTTUsersListViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		11AAC8701B02918000691A1B /* LTTUsersListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11AAC8711B02919D00691A1B /* LTTUsersListViewController.h */,
+				11AAC8721B02919D00691A1B /* LTTUsersListViewController.m */,
+				11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */,
+			);
+			path = LTTUsersListViewController;
+			sourceTree = "<group>";
+		};
+		4132326570C0AE1C7B1313A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A6B0D18E9114BD03082B76 /* Pods-LikimsTestTask.debug.xcconfig */,
+				1C23A3E67E038174F5471B9E /* Pods-LikimsTestTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1F372645EB5753CE2F8B413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE45A362C091DEC28B0507B7 /* libPods-LikimsTestTask.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11AAC8431B028F5A00691A1B /* LikimsTestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AAC8671B028F5A00691A1B /* Build configuration list for PBXNativeTarget "LikimsTestTask" */;
+			buildPhases = (
+				F2DDCCFC314F778B90A165E7 /* Check Pods Manifest.lock */,
+				11AAC8401B028F5A00691A1B /* Sources */,
+				11AAC8411B028F5A00691A1B /* Frameworks */,
+				11AAC8421B028F5A00691A1B /* Resources */,
+				A78F4570D7075EEABD22121E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LikimsTestTask;
+			productName = LikimsTestTask;
+			productReference = 11AAC8441B028F5A00691A1B /* LikimsTestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11AAC83C1B028F5A00691A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LTT;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alexander Snegursky";
+				TargetAttributes = {
+					11AAC8431B028F5A00691A1B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 11AAC83F1B028F5A00691A1B /* Build configuration list for PBXProject "LikimsTestTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11AAC83B1B028F5A00691A1B;
+			productRefGroup = 11AAC8451B028F5A00691A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11AAC8431B028F5A00691A1B /* LikimsTestTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11AAC8421B028F5A00691A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AAC8581B028F5A00691A1B /* LaunchScreen.xib in Resources */,
+				11AAC8751B02919D00691A1B /* LTTUsersListViewController.xib in Resources */,
+				11AAC8551B028F5A00691A1B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A78F4570D7075EEABD22121E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikimsTestTask/Pods-LikimsTestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2DDCCFC314F778B90A165E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11AAC8401B028F5A00691A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11008E751B02A93900302015 /* LikimsTestTask.xcdatamodeld in Sources */,
+				11AAC84D1B028F5A00691A1B /* LTTAppDelegate.m in Sources */,
+				11AAC84A1B028F5A00691A1B /* main.m in Sources */,
+				11008E7B1B02A96500302015 /* LTTUser.m in Sources */,
+				11AAC8741B02919D00691A1B /* LTTUsersListViewController.m in Sources */,
+				11008E861B02B4D700302015 /* LTTDataProvider.m in Sources */,
+				11008E6D1B02A0BC00302015 /* LTTNetworkRequestManager.m in Sources */,
+				11008E8A1B02BBED00302015 /* NSError+Errors.m in Sources */,
+				11008E781B02A96400302015 /* LTTUsersData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11AAC8561B028F5A00691A1B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AAC8571B028F5A00691A1B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11AAC8651B028F5A00691A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11AAC8661B028F5A00691A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11AAC8681B028F5A00691A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A6B0D18E9114BD03082B76 /* Pods-LikimsTestTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LikimsTestTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11AAC8691B028F5A00691A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C23A3E67E038174F5471B9E /* Pods-LikimsTestTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LikimsTestTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11AAC83F1B028F5A00691A1B /* Build configuration list for PBXProject "LikimsTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AAC8651B028F5A00691A1B /* Debug */,
+				11AAC8661B028F5A00691A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11AAC8671B028F5A00691A1B /* Build configuration list for PBXNativeTarget "LikimsTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AAC8681B028F5A00691A1B /* Debug */,
+				11AAC8691B028F5A00691A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11008E731B02A93900302015 /* LikimsTestTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11008E741B02A93900302015 /* LikimsTestTask.xcdatamodel */,
+			);
+			currentVersion = 11008E741B02A93900302015 /* LikimsTestTask.xcdatamodel */;
+			path = LikimsTestTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11AAC83C1B028F5A00691A1B /* Project object */;
+}

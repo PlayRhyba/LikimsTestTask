@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LTTUser" representedClassName="LTTUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="usersData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LTTUsersData" inverseName="users" inverseEntity="LTTUsersData" syncable="YES"/>
+    </entity>
+    <entity name="LTTUsersData" representedClassName="LTTUsersData" syncable="YES">
+        <attribute name="ts" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LTTUser" inverseName="usersData" inverseEntity="LTTUser" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LTTUser" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="LTTUsersData" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>
