@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		11008E6D1B02A0BC00302015 /* LTTNetworkRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E6C1B02A0BC00302015 /* LTTNetworkRequestManager.m */; };
 		11008E751B02A93900302015 /* LikimsTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11008E731B02A93900302015 /* LikimsTestTask.xcdatamodeld */; };
-		11008E781B02A96400302015 /* LTTUsersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E771B02A96400302015 /* LTTUsersData.m */; };
-		11008E7B1B02A96500302015 /* LTTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E7A1B02A96500302015 /* LTTUser.m */; };
-		11008E861B02B4D700302015 /* LTTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E851B02B4D700302015 /* LTTDataProvider.m */; };
 		11008E8A1B02BBED00302015 /* NSError+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 11008E891B02BBED00302015 /* NSError+Errors.m */; };
 		11AAC84A1B028F5A00691A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC8491B028F5A00691A1B /* main.m */; };
 		11AAC84D1B028F5A00691A1B /* LTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC84C1B028F5A00691A1B /* LTTAppDelegate.m */; };
@@ -19,6 +16,11 @@
 		11AAC8581B028F5A00691A1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC8561B028F5A00691A1B /* LaunchScreen.xib */; };
 		11AAC8741B02919D00691A1B /* LTTUsersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC8721B02919D00691A1B /* LTTUsersListViewController.m */; };
 		11AAC8751B02919D00691A1B /* LTTUsersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */; };
+		11E742871B03E78200B87FA6 /* LTTDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E742861B03E78200B87FA6 /* LTTDataBaseManager.m */; };
+		11E7428D1B03ECDE00B87FA6 /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7428C1B03ECDE00B87FA6 /* NSDictionary+Extended.m */; };
+		11E742901B03F29000B87FA6 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7428F1B03F29000B87FA6 /* NSString+Validation.m */; };
+		11E742931B03F8CE00B87FA6 /* LTTUsersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E742921B03F8CE00B87FA6 /* LTTUsersData.m */; };
+		11E742961B03F8CE00B87FA6 /* LTTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E742951B03F8CE00B87FA6 /* LTTUser.m */; };
 		C10F7FC429A60A643D27C42A /* libPods-LikimsTestTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE45A362C091DEC28B0507B7 /* libPods-LikimsTestTask.a */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +29,7 @@
 		11008E6B1B02A0BC00302015 /* LTTNetworkRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTNetworkRequestManager.h; sourceTree = "<group>"; };
 		11008E6C1B02A0BC00302015 /* LTTNetworkRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTNetworkRequestManager.m; sourceTree = "<group>"; };
 		11008E741B02A93900302015 /* LikimsTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LikimsTestTask.xcdatamodel; sourceTree = "<group>"; };
-		11008E761B02A96400302015 /* LTTUsersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUsersData.h; sourceTree = "<group>"; };
-		11008E771B02A96400302015 /* LTTUsersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUsersData.m; sourceTree = "<group>"; };
-		11008E791B02A96500302015 /* LTTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUser.h; sourceTree = "<group>"; };
-		11008E7A1B02A96500302015 /* LTTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUser.m; sourceTree = "<group>"; };
 		11008E7F1B02B16400302015 /* LTTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTDefinitions.h; sourceTree = "<group>"; };
-		11008E841B02B4D700302015 /* LTTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTDataProvider.h; sourceTree = "<group>"; };
-		11008E851B02B4D700302015 /* LTTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTDataProvider.m; sourceTree = "<group>"; };
 		11008E881B02BBED00302015 /* NSError+Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Errors.h"; sourceTree = "<group>"; };
 		11008E891B02BBED00302015 /* NSError+Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Errors.m"; sourceTree = "<group>"; };
 		11AAC8441B028F5A00691A1B /* LikimsTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikimsTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +42,16 @@
 		11AAC8711B02919D00691A1B /* LTTUsersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUsersListViewController.h; sourceTree = "<group>"; };
 		11AAC8721B02919D00691A1B /* LTTUsersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUsersListViewController.m; sourceTree = "<group>"; };
 		11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTTUsersListViewController.xib; sourceTree = "<group>"; };
+		11E742851B03E78200B87FA6 /* LTTDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTDataBaseManager.h; sourceTree = "<group>"; };
+		11E742861B03E78200B87FA6 /* LTTDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTDataBaseManager.m; sourceTree = "<group>"; };
+		11E7428B1B03ECDE00B87FA6 /* NSDictionary+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extended.h"; sourceTree = "<group>"; };
+		11E7428C1B03ECDE00B87FA6 /* NSDictionary+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extended.m"; sourceTree = "<group>"; };
+		11E7428E1B03F29000B87FA6 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		11E7428F1B03F29000B87FA6 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		11E742911B03F8CE00B87FA6 /* LTTUsersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUsersData.h; sourceTree = "<group>"; };
+		11E742921B03F8CE00B87FA6 /* LTTUsersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUsersData.m; sourceTree = "<group>"; };
+		11E742941B03F8CE00B87FA6 /* LTTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTUser.h; sourceTree = "<group>"; };
+		11E742951B03F8CE00B87FA6 /* LTTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTUser.m; sourceTree = "<group>"; };
 		1C23A3E67E038174F5471B9E /* Pods-LikimsTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikimsTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikimsTestTask/Pods-LikimsTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		FE45A362C091DEC28B0507B7 /* libPods-LikimsTestTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LikimsTestTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,7 +71,7 @@
 		11008E691B02A06100302015 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				11008E831B02B4CC00302015 /* LTTDataProvider */,
+				11E742841B03E78200B87FA6 /* LTTDataBaseManager */,
 				11008E6A1B02A09E00302015 /* LTTNetworkRequestManager */,
 				11008E6E1B02A26100302015 /* LTTDataBaseManager */,
 			);
@@ -92,21 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				11008E731B02A93900302015 /* LikimsTestTask.xcdatamodeld */,
-				11008E791B02A96500302015 /* LTTUser.h */,
-				11008E7A1B02A96500302015 /* LTTUser.m */,
-				11008E761B02A96400302015 /* LTTUsersData.h */,
-				11008E771B02A96400302015 /* LTTUsersData.m */,
+				11E742941B03F8CE00B87FA6 /* LTTUser.h */,
+				11E742951B03F8CE00B87FA6 /* LTTUser.m */,
+				11E742911B03F8CE00B87FA6 /* LTTUsersData.h */,
+				11E742921B03F8CE00B87FA6 /* LTTUsersData.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		11008E831B02B4CC00302015 /* LTTDataProvider */ = {
-			isa = PBXGroup;
-			children = (
-				11008E841B02B4D700302015 /* LTTDataProvider.h */,
-				11008E851B02B4D700302015 /* LTTDataProvider.m */,
-			);
-			path = LTTDataProvider;
 			sourceTree = "<group>";
 		};
 		11008E871B02BBDA00302015 /* Categories */ = {
@@ -114,6 +111,10 @@
 			children = (
 				11008E881B02BBED00302015 /* NSError+Errors.h */,
 				11008E891B02BBED00302015 /* NSError+Errors.m */,
+				11E7428B1B03ECDE00B87FA6 /* NSDictionary+Extended.h */,
+				11E7428C1B03ECDE00B87FA6 /* NSDictionary+Extended.m */,
+				11E7428E1B03F29000B87FA6 /* NSString+Validation.h */,
+				11E7428F1B03F29000B87FA6 /* NSString+Validation.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -178,6 +179,15 @@
 				11AAC8731B02919D00691A1B /* LTTUsersListViewController.xib */,
 			);
 			path = LTTUsersListViewController;
+			sourceTree = "<group>";
+		};
+		11E742841B03E78200B87FA6 /* LTTDataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				11E742851B03E78200B87FA6 /* LTTDataBaseManager.h */,
+				11E742861B03E78200B87FA6 /* LTTDataBaseManager.m */,
+			);
+			path = LTTDataBaseManager;
 			sourceTree = "<group>";
 		};
 		4132326570C0AE1C7B1313A6 /* Pods */ = {
@@ -303,15 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E742961B03F8CE00B87FA6 /* LTTUser.m in Sources */,
+				11E742871B03E78200B87FA6 /* LTTDataBaseManager.m in Sources */,
 				11008E751B02A93900302015 /* LikimsTestTask.xcdatamodeld in Sources */,
 				11AAC84D1B028F5A00691A1B /* LTTAppDelegate.m in Sources */,
+				11E742931B03F8CE00B87FA6 /* LTTUsersData.m in Sources */,
+				11E742901B03F29000B87FA6 /* NSString+Validation.m in Sources */,
 				11AAC84A1B028F5A00691A1B /* main.m in Sources */,
-				11008E7B1B02A96500302015 /* LTTUser.m in Sources */,
 				11AAC8741B02919D00691A1B /* LTTUsersListViewController.m in Sources */,
-				11008E861B02B4D700302015 /* LTTDataProvider.m in Sources */,
 				11008E6D1B02A0BC00302015 /* LTTNetworkRequestManager.m in Sources */,
+				11E7428D1B03ECDE00B87FA6 /* NSDictionary+Extended.m in Sources */,
 				11008E8A1B02BBED00302015 /* NSError+Errors.m in Sources */,
-				11008E781B02A96400302015 /* LTTUsersData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

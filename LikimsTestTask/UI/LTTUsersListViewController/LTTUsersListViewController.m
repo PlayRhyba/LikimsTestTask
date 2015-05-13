@@ -8,7 +8,10 @@
 
 
 #import "LTTUsersListViewController.h"
-#import "LTTDataProvider.h"
+#import "LTTDataBaseManager.h"
+#import "LTTUsersData.h"
+#import "UIActionSheet+Blocks.h"
+#import "MBProgressHUD.h"
 
 
 @interface LTTUsersListViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -17,7 +20,9 @@
 
 - (void)configureNavigationBar;
 - (void)configureDataSource;
+- (void)fetchDataSource;
 - (void)updateDataSource;
+- (void)clearDataSource;
 - (void)menuButtonClicked;
 
 @end
@@ -39,7 +44,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self updateDataSource];
+    [self fetchDataSource];
 }
 
 
@@ -80,21 +85,59 @@
 
 
 - (void)updateDataSource {
-    [LTTDataProvider provideDataWithSuccess:^(id data) {
-        NSLog(@"data: %@", data);
-    } failure:^(NSError *error) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                       message:error.localizedDescription
-                                                      delegate:nil
-                                             cancelButtonTitle:@"Ok"
-                                             otherButtonTitles:nil];
-        [alert show];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Updating...";
+    
+    [LTTDataBaseManager updateDataBaseWithCompletion:^(NSError *error) {
+        [hud hide:YES];
+        
+        if (error == nil) {
+            [self fetchDataSource];
+        }
+        else {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                           message:error.localizedDescription
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"Ok"
+                                                 otherButtonTitles:nil];
+            [alert show];
+        }
     }];
 }
 
 
-- (void)menuButtonClicked {
+- (void)fetchDataSource {
+    LTTUsersData *usersData = [LTTDataBaseManager fetchData];
+    NSLog(@"users: %@", usersData.users);
     
+    [self.tableView reloadData];
+}
+
+
+- (void)clearDataSource {
+    [LTTDataBaseManager clearData];
+    [self fetchDataSource];
+}
+
+
+- (void)menuButtonClicked {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Please select action"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"Cancel"
+                                              destructiveButtonTitle:@"Clear"
+                                                   otherButtonTitles:@"Import", nil];
+    __typeof(self) __weak weakSelf = self;
+    
+    actionSheet.tapBlock = ^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
+        if (buttonIndex == 0) {
+            [weakSelf clearDataSource];
+        }
+        else if (buttonIndex == 1) {
+            [weakSelf updateDataSource];
+        }
+    };
+    
+    [actionSheet showInView:self.view];
 }
 
 @end

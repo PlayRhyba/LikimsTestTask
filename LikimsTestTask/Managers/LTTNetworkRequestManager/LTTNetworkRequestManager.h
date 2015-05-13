@@ -7,15 +7,16 @@
 //
 
 
-#import <Foundation/Foundation.h>
-#import "LTTDefinitions.h"
+#import <UIKit/UIKit.h>
+
+
+typedef void (^LTTDataProvidingSuccessBlock)(id data);
+typedef void (^LTTDataProvidingFailureBlock)(NSError *error);
 
 
 @interface LTTNetworkRequestManager : NSObject
 
-+ (instancetype)sharedInstance;
-
-- (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
++ (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
                     failure:(LTTDataProvidingFailureBlock)failure;
 
 @end

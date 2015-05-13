@@ -12,10 +12,11 @@
 
 #import <Foundation/Foundation.h>
 
-
-typedef void (^LTTDataProvidingSuccessBlock)(id data);
-typedef void (^LTTDataProvidingFailureBlock)(NSError *error);
-
 static NSString * const kDataUrl = @"https://dl.dropboxusercontent.com/u/28129050/mockapi/testapi.json";
+static NSString * const kUsersKey = @"users";
+static NSString * const kLoginKey = @"login";
+static NSString * const kPasswordKey = @"password";
+static NSString * const kEmailKey = @"email";
+static NSString * const kTsKey = @"ts";
 
 #endif

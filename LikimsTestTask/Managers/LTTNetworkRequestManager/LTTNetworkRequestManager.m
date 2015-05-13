@@ -10,6 +10,14 @@
 #import "LTTNetworkRequestManager.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "NSError+Errors.h"
+#import "LTTDefinitions.h"
+
+
+@interface LTTNetworkRequestManager ()
+
++ (void)configure;
+
+@end
 
 
 @implementation LTTNetworkRequestManager
@@ -18,20 +26,14 @@
 #pragma mark - Public Methods
 
 
-+ (instancetype)sharedInstance {
-    static LTTNetworkRequestManager *_sharedInstance = nil;
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedInstance = [[LTTNetworkRequestManager alloc]init];
-    });
-    
-    return _sharedInstance;
-}
-
-
-- (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
++ (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
                     failure:(LTTDataProvidingFailureBlock)failure {
+    void (^failureBlock)(NSError *) = ^(NSError *error) {
+        if (failure) {
+            failure(error);
+        }
+    };
+    
     if ([AFNetworkReachabilityManager sharedManager].reachable) {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -43,15 +45,11 @@
                      success(responseObject);
                  }
              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                 if (failure) {
-                     failure(error);
-                 }
+                 failureBlock(error);
              }];
     }
     else {
-        if (failure) {
-            failure([NSError internetConnectionError]);
-        }
+        failureBlock([NSError internetConnectionError]);
     }
 }
 
@@ -59,12 +57,19 @@
 #pragma mark - Lifecycle Methods
 
 
-- (instancetype)init {
-    if (self = [super init]) {
-        [[AFNetworkReachabilityManager sharedManager]startMonitoring];
-    }
-    
-    return self;
++ (void)load {
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(configure)
+                                                name:UIApplicationDidFinishLaunchingNotification
+                                              object:nil];
+}
+
+
+#pragma mark - Notifications
+
+
++ (void)configure {
+    [[AFNetworkReachabilityManager sharedManager]startMonitoring];
 }
 
 @end
