@@ -27,7 +27,8 @@
 
 
 + (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
-                    failure:(LTTDataProvidingFailureBlock)failure {
+                    failure:(LTTDataProvidingFailureBlock)failure
+                   progress:(void (^)(float))progress {
     void (^failureBlock)(NSError *) = ^(NSError *error) {
         if (failure) {
             failure(error);
@@ -38,15 +39,23 @@
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         
-        [manager GET:kDataUrl
-          parameters:nil
-             success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                 if (success) {
-                     success(responseObject);
-                 }
-             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                 failureBlock(error);
-             }];
+        AFHTTPRequestOperation *operation = [manager GET:kDataUrl
+                                              parameters:nil
+                                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                     if (success) {
+                                                         success(responseObject);
+                                                     }
+                                                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                     failureBlock(error);
+                                                 }];
+        
+        [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+            float p = (double)totalBytesRead / (double)totalBytesExpectedToRead;
+            
+            if (progress) {
+                progress(p);
+            }
+        }];
     }
     else {
         failureBlock([NSError internetConnectionError]);

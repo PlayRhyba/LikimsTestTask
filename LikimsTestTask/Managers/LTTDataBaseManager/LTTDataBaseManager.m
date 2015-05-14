@@ -36,7 +36,8 @@
 #pragma mark - Public Methods
 
 
-+ (void)updateDataBaseWithCompletion:(LTTDataBaseManagerCompletionBlock)completion {
++ (void)updateDataBaseWithCompletion:(LTTDataBaseManagerCompletionBlock)completion
+                            progress:(void (^)(float))progress {
     void (^completionBlock)(NSError *) = ^(NSError *error) {
         if (completion) {
             completion(error);
@@ -64,6 +65,8 @@
                 }
             }];
             
+            [LTTUsersData MR_truncateAll];
+            
             LTTUsersData *usersData = [LTTUsersData MR_createEntity];
             usersData.ts = [json dateForKey:kTsKey];
             
@@ -86,13 +89,22 @@
                 }
             }];
         }
-    } failure:completionBlock];
+    } failure:completionBlock
+                                         progress:progress];
 }
 
 
 + (LTTUsersData *)fetchData {
     LTTUsersData *usersData = [LTTUsersData MR_findAll].firstObject;
     return usersData;
+}
+
+
++ (void)deleteUser:(LTTUser *)user {
+    if (user) {
+        [user MR_deleteEntity];
+        [[NSManagedObjectContext MR_defaultContext]MR_saveOnlySelfAndWait];
+    }
 }
 
 

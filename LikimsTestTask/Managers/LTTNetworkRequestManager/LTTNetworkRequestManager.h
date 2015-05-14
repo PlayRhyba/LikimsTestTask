@@ -17,6 +17,7 @@ typedef void (^LTTDataProvidingFailureBlock)(NSError *error);
 @interface LTTNetworkRequestManager : NSObject
 
 + (void)loadDataWithSuccess:(LTTDataProvidingSuccessBlock)success
-                    failure:(LTTDataProvidingFailureBlock)failure;
+                    failure:(LTTDataProvidingFailureBlock)failure
+                   progress:(void (^)(float progress))progress;
 
 @end
